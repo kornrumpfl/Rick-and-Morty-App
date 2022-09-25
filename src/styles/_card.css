@@ -1,0 +1,36 @@
+h1 {
+    text-align: center;
+  }
+  
+  .list {
+    display: flex;
+    flex-wrap: wrap;
+   }
+  
+  .Alive {
+    background: rgba(50, 232, 138, 0.584);
+    color: color;
+    list-style-type: none;
+    padding: 8px;
+    border-radius: 8px;
+    margin: 10px;
+    border-style: solid;
+  }
+
+  .Dead {
+    background: rgb(242, 96, 51);
+    color: color;
+    list-style-type: none;
+    padding: 8px;
+    border-radius: 8px;
+    margin: 10px;
+    border-style: solid;
+  }
+  .Unknown {
+    border-style: solid;
+    background: rgb(180, 185, 187);
+    list-style-type: none;
+    padding: 8px;
+    border-radius: 8px;
+    margin: 10px;
+  }

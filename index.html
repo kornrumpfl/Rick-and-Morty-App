@@ -5,13 +5,40 @@
     <link rel="icon" type="image/svg+xml" href="favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="/src/styles/index.css" />
-    <title>Vite App</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rick-and-Morty-App</title>
   </head>
   <body>
     <header>
-      <h1>Hello World</h1>
-    </header>
-    <div id="app"></div>
+      <div class="filterBox">
+      <button id="filter-button" class="button">Filter</button>
+          <div id="filter-container" class="filters">
+            <ul class="filters__list">
+              <li>
+                <button id="f1" class="button--getData"> Name </button>
+                <input type="text" id="name" name="name" required
+                  minlength="4" maxlength="10" size="5">  
+              </li>
+              <li>
+                <button id="f2" class="button--getData">Alive</button>
+              </li>
+              <li>
+                <button id="f3" class="button--getData">Dead</button>
+              </li>
+              <li>
+                <button id="f4" class="button--getData">Unknown</button>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <img class="header__appLogo" src="./src/components/cool.png">
+      </header>
+    <!-- <div id="app"></div> -->
+    <ul id="listResults" class="list"></ul>
+    <footer class="footer">
+      <p>Made by Luiz</p>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script type="module" src="/src/main.js"></script>
   </body>
 </html>
