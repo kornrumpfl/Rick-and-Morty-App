@@ -35,19 +35,19 @@ filterName.addEventListener('click',()=>{
 filterAlive.addEventListener('click',()=>{
     const listResults = document.getElementById("listResults");
     listResults.innerHTML='';
-    fetchData(`https://rickandmortyapi.com/api/character?status=alive`);
+    fetchData(`https://rickandmortyapi.com/api/character?name=${nameFilter.value}&status=alive`);
     container.classList.remove("filters--active");
 })
 filterDead.addEventListener('click',()=>{
     const listResults = document.getElementById("listResults");
     listResults.innerHTML='';
-    fetchData(`https://rickandmortyapi.com/api/character?status=dead`);
+    fetchData(`https://rickandmortyapi.com/api/character?name=${nameFilter.value}&status=dead`);
     container.classList.remove("filters--active");
 })
 filterUnknown.addEventListener('click',()=>{
     const listResults = document.getElementById("listResults");
     listResults.innerHTML='';
-    fetchData(`https://rickandmortyapi.com/api/character?status=unknown`);
+    fetchData(`https://rickandmortyapi.com/api/character?name=${nameFilter.value}&status=unknown`);
     container.classList.remove("filters--active");
 })
 
